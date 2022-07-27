@@ -9,7 +9,7 @@ This is a discord bot that plays nim, a mathematical game of strategy in which t
 
 ## Demonstration
 
-A game instance
+Game instance
 
 ![](demo1.gif)
 
