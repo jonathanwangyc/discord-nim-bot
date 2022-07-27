@@ -29,9 +29,6 @@ class Nim():
         return 0 if player == 1 else 1
 
     def switch_player(self):
-        """
-        Switch the current player to the other player.
-        """
         self.player = Nim.other_player(self.player)
 
     def move(self, action):
@@ -131,7 +128,6 @@ def train(n):
 
         # Game loop
         while True:
-
             # Keep track of current state and action
             state = game.piles.copy()
             action = player.choose_action(game.piles)
@@ -173,8 +169,6 @@ def train(n):
 def play(ai, human_player=None):
     """
     Play human game against the AI.
-    `human_player` can be set to 0 or 1 to specify whether
-    human player moves first or second.
     """
 
     # If no player order set, choose human's order randomly
@@ -186,7 +180,6 @@ def play(ai, human_player=None):
 
     # Game loop
     while True:
-
         # Print contents of piles
         print()
         print("Piles:")
